@@ -1,7 +1,71 @@
-/*
- * This is a manifest file that'll automatically include all the stylesheets available in this directory
- * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
- * the top of the compiled file, but it's generally better to create a new file per style scope.
- *= require_self
- *= require_tree . 
-*/
+/*******************Informers********************************/
+#fuelPrice {
+  width: 162px;
+  margin: 10px;
+}
+#fuelPrice h3 {
+  font-family: Arial;
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #544e4e;
+}
+#fuelPrice li {
+  width: 100%;
+  background: #f1f1f1;
+}
+#fuelPrice li {
+  margin-bottom: 1px;
+}
+#fuelPrice li div {
+  position: relative;
+  width: 100%;
+  height: 21px;
+}
+#fuelPrice li div span {
+  position: absolute;
+  top: 3px;
+  right: 8px;
+  font-size: 12px;
+  font-family: Verdana;
+  color: #505050;
+}
+#fuelPrice #details {
+  width: 76px;
+  background: url(/images/greenArrowPrice.gif) no-repeat right 78%;
+  margin-top: 6px;
+}
+#fuelPrice #details > a {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: bold;
+  color: #226e00;
+  font-family: Arial;
+}
+#pulls95 {
+  background: url(/images/pulls95.gif) no-repeat left center;
+}
+#euro95 {
+  background: url(/images/euro95.gif) no-repeat left center;
+}
+#fuela92 {
+  background: url(/images/a92.gif) no-repeat left center;
+}
+#fuela80 {
+  background: url(/images/a80.gif) no-repeat left center;
+}
+#pullsDiesel {
+  background: url(/images/pullsDiesel.gif) no-repeat left center;
+}
+#euroDiesel {
+  background: url(/images/euroDiesel.gif) no-repeat left center;
+}
+#gaz {
+  background: url(/images/gaz.gif) no-repeat left center;
+}
+/*__________________________________________________________*/
+
+ol, ul {
+	list-style: none;
+}
