@@ -69,3 +69,19 @@
 ol, ul {
 	list-style: none;
 }
+
+
+
+.klo-prices-for-gas-container { width: 25%; float: left; height: 620px; padding: 35px 0 0 0; position: relative; z-index: 9; }
+/*.klo-prices-for-gas { position: absolute; top: 35px; left: 0; width: 335px; height: 620px; padding: 0; background: url(/images/klo-prices-for-gas.png) 0 0 no-repeat; }*/
+.p-98 { position: absolute; width: 60px; height: 23px; top: 184px; left: 120px; }
+.p-95-ua { position: absolute; width: 60px; height: 23px; top: 228px; left: 120px; }
+.p-95-super { position: absolute; width: 60px; height: 23px; top: 272px; left: 120px; }
+.p-95-ventus { position: absolute; width: 60px; height: 23px; top: 316px; left: 120px; }
+.p-ventus-dt { position: absolute; width: 60px; height: 23px; top: 360px; left: 120px; }
+.p-92 { position: absolute; width: 60px; height: 23px; top: 404px; left: 120px; }
+.p-80 { position: absolute; width: 60px; height: 23px; top: 448px; left: 120px; }
+.p-dp { position: absolute; width: 60px; height: 23px; top: 492px; left: 120px; }
+.p-gas { position: absolute; width: 60px; height: 23px; top: 536px; left: 120px; }
+
+/*.p-98 > span, .p-95-ua > span, .p-95-super > span, .p-95-ventus > span, .p-ventus-dt > span, .p-92 > span, .p-80 > span, .p-dp > span, .p-gas > span { text-indent: -99999px; display: block; height: 23px; width: 13px; position: absolute; top: 0; overflow: hidden; }*/
