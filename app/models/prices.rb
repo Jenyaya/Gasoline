@@ -14,7 +14,3 @@ class Prices
   end
 
 end
-
-  page = Prices.get_klo
-
-puts page
