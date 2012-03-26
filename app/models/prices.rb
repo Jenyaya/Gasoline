@@ -48,13 +48,8 @@ class Prices
   def self.get_info_klo
 
      @url = "http://klo.ua/avtozapravka/"
-    @hp = Hpricot(open(@url))
+  puts Hpricot(open(@url))
 
-    prices = {}
-
-    (@hp/"div.klo-prices-for-gas-container/div").each { |div|
-      puts div
-    }
 
 
 
