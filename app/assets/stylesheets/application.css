@@ -1,111 +1,211 @@
 table.datagrid {
-	font-family: verdana,arial,sans-serif;
-	font-size:11px;
-	color:#333333;
-	border-width: 1px;
-	border-color: #666666;
-	border-collapse: collapse;
-}
- th {
-	border-width: 1px;
-	padding: 8px;
-	border-style: solid;
-	border-color: #666666;
-	background-color: #dedede;
-}
- td {
-	border-width: 1px;
-	padding: 8px;
-	border-style: solid;
-	border-color: #666666;
-	background-color: #ffffff;
+    font-family: verdana, arial, sans-serif;
+    font-size: 11px;
+    color: #333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+    display: inline;
 }
 
+th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #dedede;
+}
+
+td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #ffffff;
+}
+
+div.fuel_prices {
+    width: 500px;
+    overflow: hidden;
+}
+
+.klo_prices {
+    width: 250px;
+    float: left;
+}
+
+.okko_prices {
+    width: 250px;
+    float: right;
+}
 
 /*******************Informers********************************/
 #fuelPrice {
-  width: 162px;
-  margin: 10px;
+    width: 162px;
+    margin: 10px;
 }
+
 #fuelPrice h3 {
-  font-family: Arial;
-  text-align: center;
-  margin-bottom: 12px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #544e4e;
+    font-family: Arial;
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #544e4e;
 }
+
 #fuelPrice li {
-  width: 100%;
-  background: #f1f1f1;
+    width: 100%;
+    background: #f1f1f1;
 }
+
 #fuelPrice li {
-  margin-bottom: 1px;
+    margin-bottom: 1px;
 }
+
 #fuelPrice li div {
-  position: relative;
-  width: 100%;
-  height: 21px;
+    position: relative;
+    width: 100%;
+    height: 21px;
 }
+
 #fuelPrice li div span {
-  position: absolute;
-  top: 3px;
-  right: 8px;
-  font-size: 12px;
-  font-family: Verdana;
-  color: #505050;
+    position: absolute;
+    top: 3px;
+    right: 8px;
+    font-size: 12px;
+    font-family: Verdana;
+    color: #505050;
 }
+
 #fuelPrice #details {
-  width: 76px;
-  background: url(/images/greenArrowPrice.gif) no-repeat right 78%;
-  margin-top: 6px;
+    width: 76px;
+    background: url(/images/greenArrowPrice.gif) no-repeat right 78%;
+    margin-top: 6px;
 }
+
 #fuelPrice #details > a {
-  font-size: 12px;
-  line-height: 12px;
-  font-weight: bold;
-  color: #226e00;
-  font-family: Arial;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: bold;
+    color: #226e00;
+    font-family: Arial;
 }
+
 #pulls95 {
-  background: url(/images/pulls95.gif) no-repeat left center;
+    background: url(/images/pulls95.gif) no-repeat left center;
 }
+
 #euro95 {
-  background: url(/images/euro95.gif) no-repeat left center;
+    background: url(/images/euro95.gif) no-repeat left center;
 }
+
 #fuela92 {
-  background: url(/images/a92.gif) no-repeat left center;
+    background: url(/images/a92.gif) no-repeat left center;
 }
+
 #fuela80 {
-  background: url(/images/a80.gif) no-repeat left center;
+    background: url(/images/a80.gif) no-repeat left center;
 }
+
 #pullsDiesel {
-  background: url(/images/pullsDiesel.gif) no-repeat left center;
+    background: url(/images/pullsDiesel.gif) no-repeat left center;
 }
+
 #euroDiesel {
-  background: url(/images/euroDiesel.gif) no-repeat left center;
+    background: url(/images/euroDiesel.gif) no-repeat left center;
 }
+
 #gaz {
-  background: url(/images/gaz.gif) no-repeat left center;
+    background: url(/images/gaz.gif) no-repeat left center;
 }
+
 /*__________________________________________________________*/
 
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 
+.klo-prices-for-gas-container {
+    width: 25%;
+    float: left;
+    height: 620px;
+    padding: 35px 0 0 0;
+    position: relative;
+    z-index: 9;
+}
 
-
-.klo-prices-for-gas-container { width: 25%; float: left; height: 620px; padding: 35px 0 0 0; position: relative; z-index: 9; }
 /*.klo-prices-for-gas { position: absolute; top: 35px; left: 0; width: 335px; height: 620px; padding: 0; background: url(/images/klo-prices-for-gas.png) 0 0 no-repeat; }*/
-.p-98 { position: absolute; width: 60px; height: 23px; top: 184px; left: 120px; }
-.p-95-ua { position: absolute; width: 60px; height: 23px; top: 228px; left: 120px; }
-.p-95-super { position: absolute; width: 60px; height: 23px; top: 272px; left: 120px; }
-.p-95-ventus { position: absolute; width: 60px; height: 23px; top: 316px; left: 120px; }
-.p-ventus-dt { position: absolute; width: 60px; height: 23px; top: 360px; left: 120px; }
-.p-92 { position: absolute; width: 60px; height: 23px; top: 404px; left: 120px; }
-.p-80 { position: absolute; width: 60px; height: 23px; top: 448px; left: 120px; }
-.p-dp { position: absolute; width: 60px; height: 23px; top: 492px; left: 120px; }
-.p-gas { position: absolute; width: 60px; height: 23px; top: 536px; left: 120px; }
+.p-98 {
+    position: absolute;
+    width: 60px;
+    height: 23px;
+    top: 184px;
+    left: 120px;
+}
+
+.p-95-ua {
+    position: absolute;
+    width: 60px;
+    height: 23px;
+    top: 228px;
+    left: 120px;
+}
+
+.p-95-super {
+    position: absolute;
+    width: 60px;
+    height: 23px;
+    top: 272px;
+    left: 120px;
+}
+
+.p-95-ventus {
+    position: absolute;
+    width: 60px;
+    height: 23px;
+    top: 316px;
+    left: 120px;
+}
+
+.p-ventus-dt {
+    position: absolute;
+    width: 60px;
+    height: 23px;
+    top: 360px;
+    left: 120px;
+}
+
+.p-92 {
+    position: absolute;
+    width: 60px;
+    height: 23px;
+    top: 404px;
+    left: 120px;
+}
+
+.p-80 {
+    position: absolute;
+    width: 60px;
+    height: 23px;
+    top: 448px;
+    left: 120px;
+}
+
+.p-dp {
+    position: absolute;
+    width: 60px;
+    height: 23px;
+    top: 492px;
+    left: 120px;
+}
+
+.p-gas {
+    position: absolute;
+    width: 60px;
+    height: 23px;
+    top: 536px;
+    left: 120px;
+}
 
 /*.p-98 > span, .p-95-ua > span, .p-95-super > span, .p-95-ventus > span, .p-ventus-dt > span, .p-92 > span, .p-80 > span, .p-dp > span, .p-gas > span { text-indent: -99999px; display: block; height: 23px; width: 13px; position: absolute; top: 0; overflow: hidden; }*/
