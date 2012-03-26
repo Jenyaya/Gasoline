@@ -1,91 +1,62 @@
 <div class="prices">
 
-  Here should be the prices on the current date
-  <h3><%=Date.today %></h3>
+  Цены на топливо на текущую дату
+  <h3><%= Date.today %></h3>
 
 
-<div id="fuelPrice">
-	<h3>Ціни на пальне</h3>
-	<ul>
-		<li><div id="pulls95"><span>11.99</span></div></li>
-		<li><div id="euro95"><span>11.19</span></div></li>
-		<li><div id="fuela92"><span>10.78</span></div></li>
-		<li><div id="fuela80"><span>10.24</span></div></li>
-		<li><div id="pullsDiesel"><span>10.99</span></div></li>
-		<li><div id="euroDiesel"><span>10.24</span></div></li>
-		<li><div id="gaz"><span>6.33</span></div></li>
-	</ul>
-</div>
+  <div class="fuel_prices">
+
+    <p>КЛО</p>
+
+    <div class="klo_prices">
+      <table class="datagrid">
+        <tr>
+          <th>Топливо</td>
+          <th>Цена, грн</td>
+        </tr>
+
+        <% @klo_prices.each { |key, value| %>
+            <tr>
+              <td><%= key %></td>
+              <td><%= value %></td>
+            </tr>
+        <% } %>
+      </table>
+    </div>
+
+    <p>ОККО</p>
+
+    <div class="okko_prices">
+      <table class="datagrid">
+        <tr>
+          <th>Топливо</td>
+          <th>Цена, грн</td>
+        </tr>
+
+        <% @okko_prices.each { |key, value| %>
+            <tr>
+              <td><%= key %></td>
+              <td><%= value %></td>
+            </tr>
+        <% } %>
+      </table>
+    </div>
 
 
-<div class="klo-prices-for-gas-container">
-                            <div class="klo-prices-for-gas"></div>
+  </div>
 
-                            <div class="p-98">
-                                <span class="first-num number-1">1</span>
-                                <span class="second-num number-1">1</span>
-                                <span class="dot-yellow">.</span>
-                                <span class="third-num number-9">9</span>
-                                <span class="fourth-num number-4">4</span>
-                            </div>
-                            <div class="p-95-ua">
-                                <span class="first-num number-1">1</span>
-                                <span class="second-num number-0">0</span>
-                                <span class="dot-white">.</span>
-                                <span class="third-num number-4">4</span>
-                                <span class="fourth-num number-4">4</span>
-                            </div>
-                            <div class="p-95-super">
-                                <span class="first-num number-1">1</span>
-                                <span class="second-num number-0">0</span>
-                                <span class="dot-white">.</span>
-                                <span class="third-num number-9">9</span>
-                                <span class="fourth-num number-4">4</span>
-                            </div>
-                            <div class="p-95-ventus">
-                                <span class="first-num number-1">1</span>
-                                <span class="second-num number-1">1</span>
-                                <span class="dot-white">.</span>
-                                <span class="third-num number-7">7</span>
-                                <span class="fourth-num number-4">4</span>
-                            </div>
-                            <div class="p-ventus-dt">
-                                <span class="first-num number-1">1</span>
-                                <span class="second-num number-1">1</span>
-                                <span class="dot-white">.</span>
-                                <span class="third-num number-0">0</span>
-                                <span class="fourth-num number-9">9</span>
-                            </div>
-                            <div class="p-92">
-                                <span class="first-num number-1">1</span>
-                                <span class="second-num number-0">0</span>
-                                <span class="dot-yellow">.</span>
-                                <span class="third-num number-2">2</span>
-                                <span class="fourth-num number-4">4</span>
-                            </div>
-                            <div class="p-80">
-                                <span class="first-num"></span>
-                                <span class="second-num number-9">9</span>
-                                <span class="dot-yellow">.</span>
-                                <span class="third-num number-7">7</span>
-                                <span class="fourth-num number-4">4</span>
-                            </div>
-                            <div class="p-dp">
-                                <span class="first-num"></span>
-                                <span class="second-num number-9">9</span>
-                                <span class="dot-yellow">.</span>
-                                <span class="third-num number-9">9</span>
-                                <span class="fourth-num number-9">9</span>
-                            </div>
-                            <div class="p-gas">
-                                <span class="first-num"></span>
-                                <span class="second-num number-5">5</span>
-                                <span class="dot-yellow">.</span>
-                                <span class="third-num number-8">8</span>
-                                <span class="fourth-num number-9">9</span>
-                            </div>
-                                        </div>
-
+  <!--<div id="fuelPrice">-->
+  <!--<h3>Ціни на пальне</h3>-->
+  <!--<ul>-->
+  <!--<li><div id="pulls95"><span>11.99</span></div></li>-->
+  <!--<li><div id="euro95"><span>11.19</span></div></li>-->
+  <!--<li><div id="fuela92"><span>10.78</span></div></li>-->
+  <!--<li><div id="fuela80"><span>10.24</span></div></li>-->
+  <!--<li><div id="pullsDiesel"><span>10.99</span></div></li>-->
+  <!--<li><div id="euroDiesel"><span>10.24</span></div></li>-->
+  <!--<li><div id="gaz"><span>6.33</span></div></li>-->
+  <!--</ul>-->
+  <!--</div>-->
 
 
 </div>

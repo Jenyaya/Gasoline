@@ -15,6 +15,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'hpricot'
 
 
 group :development, :test do
