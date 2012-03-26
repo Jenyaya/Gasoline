@@ -4,6 +4,7 @@ Gasoline::Application.routes.draw do
   get "pages/getprices"
 
   root :to => 'pages#getprices'
+  match '/getklo', :to => 'pages#getklo'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

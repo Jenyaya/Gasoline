@@ -8,4 +8,8 @@ class PagesController < ApplicationController
   end
 
 
+  def getklo
+     @klo_prices = Prices.get_klo
+  end
+
 end
