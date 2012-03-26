@@ -38,7 +38,7 @@ class Prices
         prices[key]+=span.to_s }
     }
 
-   prices.keep_if { |key, value| !value.empty? }
+    prices.keep_if { |key, value| !value.empty? }
 
     return prices
 
@@ -47,12 +47,11 @@ class Prices
 
   def self.get_info_klo
 
-     @url = "http://klo.ua/avtozapravka/"
-   @hp = Hpricot(open(@url))
+    @url = "http://klo.ua/avtozapravka/"
+    @hp = Hpricot(open(@url))
 
-     (@hp./"div.klo-prices-for-gas-container").each {|e| puts e}
-
-
+   # (@hp./ "div.klo-prices-for-gas-container").each { |e| puts e }
+     return @hp./ "div.klo-prices-for-gas-container"
   end
 
 end
