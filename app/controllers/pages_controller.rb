@@ -9,7 +9,7 @@ class PagesController < ApplicationController
 
 
   def getklo
-     @klo_prices = Prices.get_klo
+     @klo_prices = Prices.get_info_klo
   end
 
 end
