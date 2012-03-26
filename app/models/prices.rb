@@ -51,7 +51,7 @@ class Prices
     @hp = Hpricot(open(@url))
 
    # (@hp./ "div.klo-prices-for-gas-container").each { |e| puts e }
-     return @hp./ "div.klo-prices-for-gas-container"
+     return @hp
   end
 
 end
