@@ -1,3 +1,11 @@
+body {
+    background-color: #cccccc;
+}
+
+p, h3 {
+    color: #000000;
+}
+
 table.datagrid {
     font-family: verdana, arial, sans-serif;
     font-size: 11px;
@@ -6,6 +14,13 @@ table.datagrid {
     border-color: #666666;
     border-collapse: collapse;
     display: inline;
+    text-align: center;
+}
+
+caption {
+    padding: 8px;
+    font-size: 12px;
+    font-weight:bold;
 }
 
 th {
@@ -16,7 +31,7 @@ th {
     background-color: #dedede;
 }
 
-td {
+td, tr {
     border-width: 1px;
     padding: 8px;
     border-style: solid;
@@ -24,7 +39,13 @@ td {
     background-color: #ffffff;
 }
 
-div.fuel_prices {
+/*div.fuel_prices {*/
+/*width: 500px;*/
+/*overflow: hidden;*/
+/*}*/
+
+div.prices {
+    margin: 0 auto;
     width: 500px;
     overflow: hidden;
 }
@@ -93,32 +114,40 @@ div.fuel_prices {
 }
 
 #pulls95 {
-    background: url(/images/pulls95.gif) no-repeat left center;
+    background: url(/images/pulls95.gif) no-repeat center center;
 }
 
 #euro95 {
-    background: url(/images/euro95.gif) no-repeat left center;
+    background: url(/images/euro95.gif) no-repeat center center;
 }
 
 #fuela92 {
-    background: url(/images/a92.gif) no-repeat left center;
+    background: url(/images/a92.gif) no-repeat center center;
 }
 
 #fuela80 {
-    background: url(/images/a80.gif) no-repeat left center;
+    background: url(/images/a80.gif) no-repeat center center;
 }
 
 #pullsDiesel {
-    background: url(/images/pullsDiesel.gif) no-repeat left center;
+    background: url(/images/pullsDiesel.gif) no-repeat center center;
 }
 
 #euroDiesel {
-    background: url(/images/euroDiesel.gif) no-repeat left center;
+    background: url(/images/euroDiesel.gif) no-repeat center center;
 }
 
 #gaz {
-    background: url(/images/gaz.gif) no-repeat left center;
+    background: url(/images/gaz.gif) no-repeat center center;
 }
+
+/*#klo_logo {*/
+/*background: url(/images/klo_logo.gif) no-repeat center center;*/
+/*}*/
+
+/*#p-95-ua {*/
+/*background: url(/images/p-95-ua.gif) no-repeat center center;*/
+/*}*/
 
 /*__________________________________________________________*/
 

@@ -1,8 +1,9 @@
-class PagesController < ApplicationController
+ # encoding: utf-8
+ class PagesController < ApplicationController
 
 
   def getprices
-    @title = 'Gasoline Prices'
+    @title = "Цены на бензин"
     @klo_prices = Prices.get_klo
     @okko_prices = Prices.get_okko
   end

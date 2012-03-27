@@ -1,17 +1,13 @@
 <div class="prices">
 
-  Цены на топливо на текущую дату
-  <h3><%= Date.today %></h3>
-
+  <h3> Цены на топливо на текущую дату <%= Date.today %></h3>
 
   <div class="fuel_prices">
 
-    <p>КЛО</p>
-
     <div class="klo_prices">
 
-
-      <table class="datagrid">
+      <table class="datagrid" id="klo_prices">
+        <caption>КЛО</caption>
         <tr>
           <th>Топливо</td>
           <th>Цена, грн</td>
@@ -19,17 +15,17 @@
 
         <% @klo_prices.each { |key, value| %>
             <tr>
-              <td><%= key %></td>
+              <td id=<%= key %>><%= key %></td>
               <td><%= value %></td>
             </tr>
         <% } %>
       </table>
     </div>
 
-    <p>ОККО</p>
 
     <div class="okko_prices">
-      <table class="datagrid">
+      <table class="datagrid" id="okko_prices">
+        <caption>ОККО</caption>
         <tr>
           <th>Топливо</td>
           <th>Цена, грн</td>
@@ -37,7 +33,7 @@
 
         <% @okko_prices.each { |key, value| %>
             <tr>
-              <td><%= key %></td>
+              <td id=<%= key %>></td>
               <td><%= value %></td>
             </tr>
         <% } %>

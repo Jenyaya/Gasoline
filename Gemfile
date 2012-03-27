@@ -41,6 +41,8 @@ group :test do
   # Pretty printed test output
   gem 'turn', '0.8.2', :require => false
   gem 'capybara', '1.1.2'
+   gem 'cucumber-rails', '1.2.1'
+  gem 'database_cleaner', '0.7.0'
 end
 
 group :production do
